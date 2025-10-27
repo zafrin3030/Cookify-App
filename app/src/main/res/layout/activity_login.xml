@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/loginBackground"
+    tools:context=".controllers.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <!-- 🖼️ Illustration image at the top -->
+        <ImageView
+            android:id="@+id/imageIllustration"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/login_illustration"
+            android:src="@drawable/login_illustration"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 👋 Welcome text -->
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageIllustration"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcome_back"
+            android:textColor="@color/loginText"
+            android:textSize="24sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 📧 Email input field -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/textWelcome"
+            android:hint="@string/email"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_edittext"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_email"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/loginText"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 🔒 Password input field -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/editEmail"
+            android:hint="@string/password"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/loginText"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ❓ Forgot password link -->
+        <TextView
+            android:id="@+id/textForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPassword"
+            android:layout_alignParentEnd="true"
+            android:text="@string/forgot_password"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/forgot_password" />
+
+        <!-- 🔘 Login button -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/textForgotPassword"
+            android:background="@drawable/bg_button_orange"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 🤝 Social login buttons -->
+        <LinearLayout
+            android:id="@+id/layoutSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <!-- Google login -->
+            <ImageView
+                android:id="@+id/googleIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_google"
+                android:contentDescription="@string/google"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Facebook login -->
+            <ImageView
+                android:id="@+id/facebookIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="@string/facebook" />
+        </LinearLayout>
+
+        <!-- 📝 Sign-Up prompt -->
+        <LinearLayout
+            android:id="@+id/layoutSignUpPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/layoutSocial"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp">
+
+            <!-- "Don't have an account?" text -->
+            <TextView
+                android:id="@+id/textAccountPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins" />
+
+            <!-- Sign-Up clickable text -->
+            <TextView
+                android:id="@+id/textSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_redirect"
+                android:textSize="14sp"
+                android:textColor="@color/orange_primary"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

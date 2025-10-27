@@ -1,0 +1,30 @@
+<resources>
+    <!-- 🏷️ App info -->
+    <string name="app_name" translatable="false">Cookify</string> <!-- The app name displayed on device -->
+    <string name="slogan"> Discover delicious recipes and cooking tips </string> <!-- App tagline -->
+    <string name="start"> Get Started</string> <!-- Text for splash screen button -->
+
+    <!-- 🔑 Login & Sign Up related strings -->
+    <string name="login_illustration" translatable="false">log</string> <!-- Placeholder description for login illustration image -->
+    <string name="welcome_back">Welcome Back</string> <!-- Greeting text for login screen -->
+    <string name="create_your_account">Create your account</string> <!-- Title for sign-up screen -->
+    <string name="email">Email</string> <!-- Hint for email input field -->
+    <string name="password">Password</string> <!-- Hint for password input field -->
+    <string name="confirm_password">Confirm Password</string> <!-- Hint for confirm password field -->
+    <string name="login">Login</string> <!-- Login button text -->
+    <string name="sign_up">Sign UP</string> <!-- Sign-up button text -->
+    <string name="forgot_password">Forgot Password?</string> <!-- Forgot password link text -->
+    <string name="text_login"> Don’t have an account?</string> <!-- Prompt text on login screen -->
+    <string name="text_signup"> Already have an account?</string> <!-- Prompt text on sign-up screen -->
+    <string name="signup_redirect"> Sign Up</string> <!-- Redirect link for sign-up -->
+    <string name="login_redirect"> Sign In</string> <!-- Redirect link for login -->
+
+    <!-- 🌐 Social login buttons -->
+    <string name="continue_with">or continue with</string> <!-- Text above social login buttons -->
+    <string name="google" translatable="false">Google</string> <!-- Label for Google login button -->
+    <string name="facebook" translatable="false">Facebook</string> <!-- Label for Facebook login button -->
+
+    <!-- 🔐 Firebase OAuth 2.0 Web Client ID for Google Sign-In -->
+    <string name="default_web_client_id">219772478090-hbkgjsrgvh5v0kd7vtner913kifet7u2.apps.googleusercontent.com</string>
+    <!-- Required for Google Sign-In integration -->
+</resources>

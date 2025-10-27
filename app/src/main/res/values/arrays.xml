@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 🔐 Google Fonts certificates array (used internally by Google Play Services) -->
+    <array name="com_google_android_gms_fonts_certs">
+        <!-- Reference to the dev certificates -->
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <!-- Reference to the production certificates -->
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+
+    <!-- 🛠️ Development certificates for Google Fonts -->
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp8xiGNp44Ycx8yxoN9rDf2vuG3G6smMWQn2t8F+4E0GL0G1yho1kJ9dBoeq8Lq8yq0mS4GQj8UOfLz3Z7K2rJpVt+f2t0h7mJq2cJr5Zl+Y7+QmE3jV4bY7S2O3D8VJmVv9XwIDAQAB
+        </item>
+    </string-array>
+
+    <!-- ✅ Production certificates for Google Fonts -->
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwzj7uz7W+qO8Y9N1p3uP3iN4tP2qf7f9qYj7kpKpFqzM3cQw3l1a9Y8G9h0nO0b7iQ1M4V8kJ5N9r7hTqS8PJq+0PN9yD9j3Hk3jQIDAQAB
+        </item>
+    </string-array>
+
+</resources>

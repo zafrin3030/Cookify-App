@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "219772478090",
+    "project_id": "cookifyapp-zb3030",
+    "storage_bucket": "cookifyapp-zb3030.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219772478090:android:c245a471147d3f27724373",
+        "android_client_info": {
+          "package_name": "bd.edu.seu.cookify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219772478090-hbkgjsrgvh5v0kd7vtner913kifet7u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bd.edu.seu.cookify",
+            "certificate_hash": "2963fb66cbaa097e24be5c613f4e54a8fb467a28"
+          }
+        },
+        {
+          "client_id": "219772478090-fmisih6p8laeom4n1vgb82lihcmupb6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9iqjjnscDm6CMEQTLyJujxwLurtrlUCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219772478090-fmisih6p8laeom4n1vgb82lihcmupb6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

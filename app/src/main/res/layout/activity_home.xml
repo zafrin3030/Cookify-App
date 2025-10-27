@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Title at the top, centered horizontally -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Cookify"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Logout icon at top-left corner -->
+    <ImageView
+        android:id="@+id/iconLogout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_logout"
+        android:contentDescription="Logout"/>
+
+    <!-- Search bar below title -->
+
+    <!-- Horizontal scroll for category tabs -->
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edittext"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:hint="Search recipe"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editSearch"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/categoryTabs"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"/>
+    </HorizontalScrollView>
+
+    <!-- Empty state message (shown when no recipes found) -->
+    <TextView
+        android:id="@+id/textEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No recipes found"
+        android:textSize="16sp"
+        android:textColor="#888888"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- RecyclerView to display recipe list -->
+
+    <!-- Bottom navigation bar with 4 tabs -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottomNav"
+        android:layout_below="@id/scrollCategories"
+        android:layout_margin="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/orange_primary"
+        android:gravity="center_vertical">
+
+        <!-- Home tab -->
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home"/>
+
+        <!-- Browse tab -->
+        <ImageView
+            android:id="@+id/navBrowse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_browse"
+            android:contentDescription="Browse"/>
+
+        <!-- Substitute tab -->
+        <ImageView
+            android:id="@+id/navSubstitute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_substitute"
+            android:contentDescription="Substitute"/>
+
+        <!-- Pantry tab -->
+        <ImageView
+            android:id="@+id/navPantry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_pantry"
+            android:contentDescription="Pantry"/>
+
+    </LinearLayout>
+</RelativeLayout>

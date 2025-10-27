@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="2dp">
+
+        <!-- 🍔 Header image for sign-up screen -->
+        <ImageView
+            android:id="@+id/imageHeader"
+            android:layout_width="411dp"
+            android:layout_height="377dp"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/create_your_account"
+            android:scaleType="centerCrop"
+            android:src="@drawable/signup_header" />
+
+        <!-- 📝 Title: Create Your Account -->
+        <TextView
+            android:id="@+id/create_your_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_your_account"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 📧 Email input field -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="383dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <!-- 🔒 Password input field -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="380dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <!-- 🔒 Confirm password input field -->
+        <EditText
+            android:id="@+id/editConfirmPassword"
+            android:layout_width="381dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_edittext"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/loginText"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="17sp" />
+
+        <!-- 🟠 Sign Up button -->
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="385dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button_orange"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/poppins"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- 👇 Bottom text: Already have an account? Sign in -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- "Already have an account?" text -->
+            <TextView
+                android:id="@+id/textAccountPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="@string/text_signup"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <!-- Sign In clickable text -->
+            <TextView
+                android:id="@+id/textSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_redirect"
+                android:textSize="14sp"
+                android:textColor="@color/orange_primary"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

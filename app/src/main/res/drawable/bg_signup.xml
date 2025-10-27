@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Beige top half -->
+    <item>
+        <shape
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shape="rectangle">
+            <gradient
+                android:angle="250"
+                android:endColor="#FFFFFF"
+                android:startColor="#F0F0C0" />
+        </shape>
+    </item>
+
+</layer-list>

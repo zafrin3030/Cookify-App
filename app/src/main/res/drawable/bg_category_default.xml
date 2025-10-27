@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This is a simple shape drawable for UI elements like buttons or cards.
+    It creates a white rectangle with rounded corners.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Solid fill color for the shape -->
+    <solid android:color="#FFFFFF"/>  <!-- White background -->
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp"/>  <!-- Corner radius of 16dp for smooth edges -->
+
+</shape>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#171212</color>
+    <color name="gray">#877063</color>
+
+    <!-- Splash Screen Colors -->
+    <color name="splashBackground">#FFE5D0</color>
+    <color name="splashText">#333333</color>
+    <color name="splashAccent">#FF7A00</color>
+
+    <!-- Login Screen Colors -->
+    <color name="loginBackground">#FFFFFF</color>
+    <color name="loginText">#333333</color>
+    <color name="loginAccent">#FF7A00</color>
+
+    <!-- Custom additions -->
+    <color name="dark_red">#B00020</color>
+    <color name="orange_primary">#FF7A00</color>
+    <color name="orange_secondary">#FFA64D</color>
+
+
+</resources>

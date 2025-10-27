@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This is a shape drawable used for buttons or backgrounds.
+    It defines a rectangle with rounded corners and a gradient color.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Rounded corners with 12dp radius -->
+    <corners android:radius="12dp" />
+
+    <!-- Linear gradient background -->
+    <gradient
+        android:angle="0"
+    android:startColor="#FF7A00"
+    android:endColor="#FFA64D"
+    android:type="linear" />
+</shape>

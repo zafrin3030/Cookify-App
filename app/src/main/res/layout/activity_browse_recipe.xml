@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_edittext"
+        android:drawableEnd="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:hint="Cookify"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:singleLine="true" />
+
+    <!-- Culture Filter Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCulture"
+        android:layout_width="128dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button_orange"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <TextView
+        android:id="@+id/textPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="12dp"
+        android:text="Popular Recipes"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- Recipes List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+
+    <!-- Bottom navigation bar with 4 tabs -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/orange_primary"
+        android:gravity="center_vertical">
+
+        <!-- Home tab -->
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_home"
+            android:contentDescription="Home"/>
+
+        <!-- Browse tab -->
+        <ImageView
+            android:id="@+id/navBrowse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_browse"
+            android:contentDescription="Browse"/>
+
+        <!-- Substitute tab -->
+        <ImageView
+            android:id="@+id/navSubstitute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_substitute"
+            android:contentDescription="Substitute"/>
+
+        <!-- Pantry tab -->
+        <ImageView
+            android:id="@+id/navPantry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@drawable/ic_pantry"
+            android:contentDescription="Pantry"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
